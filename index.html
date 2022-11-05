@@ -16,6 +16,8 @@
           <ul class="nav-links">
               <li><a href="index.html">Home</a></li>
               <li><a href="index.html">Library</a></li>
+              <li><a href="./html/login.html">Login</a>
+               </li>
                
             </li>
           </ul>
@@ -74,13 +76,13 @@
                   </a>
                 </li>
                 <li>
-                  <a href="../html/Login.html">
+                  <a href="">
                     <i class='bx bx-book-alt' ></i>
                     <span class="links_name">Past Questions</span>
                   </a>
                 </li>
                 <li>
-                  <a href="../html/tutorial.html">
+                  <a href="">
                     <i class='bx bx-message' ></i>
                     <span class="links_name">Tutorial</span>
                   </a>
@@ -255,8 +257,11 @@
             </div>
             <div class="footer-email-form">
                 <h1>Join our newsletter</h1>
-                <input type="email" placeholder="Enter your email address" id="footer-email">
-               <input type="submit" value="Sign-up" id="footer-email-btn">
+                 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?" method="post">
+                <input type="email" placeholder="Enter your email address" id="email">
+                <span class="error"><?php echo $emailErr;?></span>
+               <input type="submit"  value="Sign-up" id="email-btn">
+              </form>
             </div>
             </div>
         </div>

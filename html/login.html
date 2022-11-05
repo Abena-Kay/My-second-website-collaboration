@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="footer-email-form" style="width: 100%;height: 100vh;background-color: aqua;">
+        <h1>Join our newsletter</h1>
+        <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+         <input type="email"  placeholder="Enter your name" id="name"><br>
+         <input type="email"  placeholder="Enter password" id="password"><br>
+         <input type="email"  placeholder="Confirm password" id="cpassword"><br>
+        <input type="email"  placeholder="Enter your email address" id="email"><br>
+       <input type="submit"  value="Sign-up" id="email-btn">
+      </form>
+    </div>
+</body>
+</html>

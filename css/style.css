@@ -5,25 +5,37 @@
     box-sizing: border-box;
 }
 .header{
-    height:40vh;
+    height:60vh;
     width: 100%;
     padding: 0;
     background-image: url(../th.jpg);
+    animation-name: example;
+    animation-duration: 5s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+
+}
+@keyframes example {
+    0% {background-image: url(../images/th.jpg);}
+    25% {background-image: url(../images/robot.jpg);}
+    50% {background-image: url(../images/science.jpg);}
+    75% {background-image: url(../images/planet.jpg);}
+    100% {background-image: url(../images/plant.jpg);}
 }
 nav{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-  
+    justify-content: space-between
 }
 
 .logo-details{
     height: 80px;
     display: flex;
     align-items: center;
+    
   }
   .logo-details i{
     font-size: 30px;
@@ -31,6 +43,7 @@ nav{
     color: #fff;
     min-width: 60px;
     text-align: center
+    
   }
   .logo-details .logo_name{
     color: rgb(130, 183, 243);
@@ -149,7 +162,7 @@ nav{
 .footer-email-form h2{
     margin-bottom: 2rem;
 }
-#footer-email{
+#email{
     width: 250px;
     height: 40px;
     border-radius: 4px;
@@ -165,10 +178,10 @@ nav{
 .footer-email-form h1{
     padding-top: 30px;
 }
-#footer-email::placeholder{
+#email::placeholder{
     color: rgb(201, 164, 109);
 }
-#footer-email-btn{
+#email-btn{
     width: 120px;
     height: 40px;
     border-radius: 4px;
@@ -178,7 +191,7 @@ nav{
     color: rgb(247, 248, 248);
     font-size: 1rem;
 }
-#footer-email-btn:hover{
+#email-btn:hover{
   cursor: pointer;  
   background-color: #da1414;
   transition: all 0.4 ease-out;
